@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Flavour Theif | Fine Dining Experience</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>The Flavour Theif</h1>
+        </div>
+        <nav class="main-nav">
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>Fine Dining Experience</h2>
+        <p>Culinary excellence in every bite</p>
+        <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Story</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Founded in 2010, The Flavour Theif has been serving exquisite cuisine crafted from the finest ingredients. Our passionate chefs combine traditional recipes with modern techniques to create unforgettable dining experiences.</p>
+            <p>Every dish tells a story of our dedication to culinary excellence and our commitment to sustainable, locally-sourced ingredients.</p>
+            <a href="#contact" class="btn btn-secondary">Make a Reservation</a>
+          </div>
+          <div class="about-image">
+            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Restaurant interior">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="menu-categories">
+          <button class="menu-category active" data-category="starters">Starters</button>
+          <button class="menu-category" data-category="mains">Main Courses</button>
+          <button class="menu-category" data-category="desserts">Desserts</button>
+          <button class="menu-category" data-category="drinks">Drinks</button>
+        </div>
+        <div class="menu-items">
+          <div class="menu-item">
+            <h3>Pan-Seared Scallops</h3>
+            <div class="menu-item-price">$18</div>
+            <p>Served with cauliflower purée and crispy pancetta</p>
+          </div>
+          <div class="menu-item">
+            <h3>Wild Mushroom Risotto</h3>
+            <div class="menu-item-price">$16</div>
+            <p>Creamy arborio rice with truffle oil and parmesan</p>
+          </div>
+          <div class="menu-item">
+            <h3>Beef Carpaccio</h3>
+            <div class="menu-item-price">$17</div>
+            <p>Thinly sliced with arugula, capers, and aged balsamic</p>
+          </div>
+          <div class="menu-item">
+            <h3>Roasted Beet Salad</h3>
+            <div class="menu-item-price">$14</div>
+            <p>With goat cheese, walnuts, and honey vinaigrette</p>
+          </div>
+        </div>
+        <div class="menu-footer">
+          <a href="#" class="btn btn-secondary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2>Food Gallery</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dish 1">
+            <div class="gallery-overlay">
+              <h3>Signature Beef Wellington</h3>
+              <p>Our chef's special creation</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dish 2">
+            <div class="gallery-overlay">
+              <h3>Seafood Platter</h3>
+              <p>Fresh from the ocean</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dish 3">
+            <div class="gallery-overlay">
+              <h3>Chocolate Soufflé</h3>
+              <p>Decadent dessert</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dish 4">
+            <div class="gallery-overlay">
+              <h3>Truffle Pasta</h3>
+              <p>Handmade pasta with seasonal truffles</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dish 5">
+            <div class="gallery-overlay">
+              <h3>Signature Cocktails</h3>
+              <p>Crafted by our mixologists</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dish 6">
+            <div class="gallery-overlay">
+              <h3>Seared Tuna</h3>
+              <p>With sesame crust and wasabi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Guest Experiences</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="testimonials-slider">
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"An extraordinary dining experience. Each dish was a masterpiece, and the service was impeccable."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Emily Johnson</div>
+              <div class="author-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"The chef's tasting menu was a journey through flavors I've never experienced before. Truly unforgettable."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Michael Chen</div>
+              <div class="author-stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"From the ambiance to the wine pairings, every detail was perfectly executed. Will definitely return."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Sarah Williams</div>
+              <div class="author-stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Reservations</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Hours</h3>
+              <p>Monday - Thursday: 5pm - 10pm</p>
+              <p>Friday - Saturday: 5pm - 11pm</p>
+              <p>Sunday: 4pm - 9pm</p>
+            </div>
+            <div class="contact-item">
+              <h3>Location</h3>
+              <p>Joleshwaritola, Bogura</p>
+              
+              
+            </div>
+            <div class="contact-item">
+              <h3>Contact</h3>
+              <p>Phone: +8801780399956</p>
+              <p>Email: info@elegancerestaurant.com</p>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7+">7+ People</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Special Requests</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Reserve Table</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>The Flavour Theif</h2>
+          <p>Fine Dining Experience</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <ul class="social-links">
+              <li><a href="#" aria-label="Facebook">Facebook</a></li>
+              <li><a href="#" aria-label="Instagram">Instagram</a></li>
+              <li><a href="#" aria-label="Twitter">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address">
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MD NAFIUR RAHMAN. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple navigation toggle for mobile
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('show');
+      this.classList.toggle('active');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

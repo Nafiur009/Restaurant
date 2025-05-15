@@ -1,0 +1,112 @@
+/* Gallery Styles */
+.gallery {
+  background-color: var(--color-surface);
+  padding: var(--space-6) 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--space-2);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  height: 300px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--space-2);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: var(--color-text-inverse);
+  transform: translateY(100%);
+  transition: transform var(--transition-normal);
+}
+
+.gallery-overlay h3 {
+  margin-bottom: var(--space-1);
+  color: var(--color-text-inverse);
+  font-size: 1.2rem;
+}
+
+.gallery-overlay p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+/* Gallery Hover Effects */
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+/* Additional hover effect - slight zoom and brightness change */
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* Responsive Gallery */
+@media (min-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gallery-item {
+    height: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery-grid {
+    gap: var(--space-3);
+  }
+  
+  .gallery-item {
+    height: 280px;
+  }
+  
+  .gallery-overlay h3 {
+    font-size: 1.3rem;
+  }
+  
+  .gallery-overlay p {
+    font-size: 1rem;
+  }
+}
